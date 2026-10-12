@@ -1,0 +1,45 @@
+<strong>Period</strong>	<strong>Periode</strong>	<strong>Période</strong>	<strong>Zeitraum</strong>	<strong>Periodo</strong>	<strong>Periodo</strong>
+<strong>Total time</strong>	<strong>Totale tijd</strong>	<strong>Temps total</strong>	<strong>Gesamtzeit</strong>	<strong>Tiempo total</strong>	<strong>Tempo totale</strong>
+<strong>Total all employees</strong>	<strong>Totaal alle medewerkers</strong>	<strong>Total de tous les employés</strong>	<strong>Summe aller Mitarbeiter</strong>	<strong>Total de todos los empleados</strong>	<strong>Totale di tutti i dipendenti</strong>
+<strong>Total</strong>	<strong>Totaal</strong>	<strong>Total</strong>	<strong>Summe</strong>	<strong>Total</strong>	<strong>Totale</strong>
+All employees	Alle medewerkers	Tous les employés	Alle Mitarbeiter	Todos los empleados	Tutti i dipendenti
+Cancel	Annuleren	Annuler	Abbrechen	Cancelar	Annulla
+Company	Bedrijf	Société	Unternehmen	Empresa	Azienda
+Config Settings	Configuratie-instellingen	Paramètres de configuration	Konfigurationseinstellungen	Ajustes de configuración	Impostazioni configurazione
+Created by	Aangemaakt door	Créé par	Erstellt von	Creado por	Creato da
+Created on	Aangemaakt op	Créé le	Erstellt am	Creado el	Creato il
+Date	Datum	Date	Datum	Fecha	Data
+Description	Omschrijving	Description	Beschreibung	Descripción	Descrizione
+Display Name	Weergavenaam	Nom d'affichage	Anzeigename	Nombre mostrado	Nome visualizzato
+Employees	Medewerkers	Employés	Mitarbeiter	Empleados	Dipendenti
+End date	Einddatum	Date de fin	Enddatum	Fecha de fin	Data di fine
+Export Excel	Excel exporteren	Exporter en Excel	Excel exportieren	Exportar a Excel	Esporta Excel
+Hide "Powered by TimeViking"	"Powered by TimeViking" verbergen	Masquer « Powered by TimeViking »	"Powered by TimeViking" ausblenden	Ocultar "Powered by TimeViking"	Nascondi "Powered by TimeViking"
+Hours	Uren	Heures	Stunden	Horas	Ore
+ID	ID	ID	ID	ID	ID
+Is Manager	Is manager	Est gestionnaire	Ist Manager	Es responsable	È responsabile
+Last Updated by	Laatst bijgewerkt door	Dernière mise à jour par	Zuletzt aktualisiert von	Última actualización por	Ultimo aggiornamento di
+Last Updated on	Laatst bijgewerkt op	Dernière mise à jour le	Zuletzt aktualisiert am	Última actualización el	Ultimo aggiornamento il
+Leave empty for all employees you are allowed to see.	Leeg laten voor alle medewerkers die je mag zien.	Laissez vide pour tous les employés que vous pouvez voir.	Leer lassen für alle Mitarbeiter, die Sie sehen dürfen.	Déjelo vacío para todos los empleados que puede ver.	Lascia vuoto per tutti i dipendenti che puoi vedere.
+Period	Periode	Période	Zeitraum	Periodo	Periodo
+Powered by TimeViking (timeviking.com)	Powered by TimeViking (timeviking.com)	Powered by TimeViking (timeviking.com)	Powered by TimeViking (timeviking.com)	Powered by TimeViking (timeviking.com)	Powered by TimeViking (timeviking.com)
+Powered by TimeViking - https://timeviking.com	Powered by TimeViking - https://timeviking.com	Powered by TimeViking - https://timeviking.com	Powered by TimeViking - https://timeviking.com	Powered by TimeViking - https://timeviking.com	Powered by TimeViking - https://timeviking.com
+Print PDF	PDF afdrukken	Imprimer le PDF	PDF drucken	Imprimir PDF	Stampa PDF
+Project	Project	Projet	Projekt	Proyecto	Progetto
+Remove the small "Powered by TimeViking" line under the timesheet report.	Verwijder het kleine regeltje "Powered by TimeViking" onder het urenrapport.	Supprimer la petite ligne « Powered by TimeViking » sous le rapport.	Die kleine Zeile "Powered by TimeViking" unter dem Bericht entfernen.	Quitar la pequeña línea "Powered by TimeViking" bajo el informe.	Rimuovi la piccola riga "Powered by TimeViking" sotto il report.
+Remove the small 'Powered by TimeViking' line from the PDF and Excel report	Verwijder het regeltje 'Powered by TimeViking' uit het PDF- en Excelrapport	Supprimer la ligne « Powered by TimeViking » du rapport PDF et Excel	Die Zeile 'Powered by TimeViking' aus dem PDF- und Excel-Bericht entfernen	Quitar la línea 'Powered by TimeViking' del informe PDF y Excel	Rimuovi la riga 'Powered by TimeViking' dal report PDF ed Excel
+Start date	Startdatum	Date de début	Startdatum	Fecha de inicio	Data di inizio
+Task	Taak	Tâche	Aufgabe	Tarea	Attività
+The Python library xlsxwriter is not installed.	De Python-bibliotheek xlsxwriter is niet geïnstalleerd.	La bibliothèque Python xlsxwriter n'est pas installée.	Die Python-Bibliothek xlsxwriter ist nicht installiert.	La biblioteca Python xlsxwriter no está instalada.	La libreria Python xlsxwriter non è installata.
+The start date must be before the end date.	De startdatum moet voor de einddatum liggen.	La date de début doit précéder la date de fin.	Das Startdatum muss vor dem Enddatum liegen.	La fecha de inicio debe ser anterior a la fecha de fin.	La data di inizio deve precedere la data di fine.
+There are no timesheets for this period and these employees.	Er zijn geen uren voor deze periode en deze medewerkers.	Il n'y a aucune feuille de temps pour cette période et ces employés.	Für diesen Zeitraum und diese Mitarbeiter gibt es keine Stundenzettel.	No hay hojas de horas para este periodo y estos empleados.	Non ci sono fogli ore per questo periodo e questi dipendenti.
+Time (h:mm)	Tijd (u:mm)	Temps (h:mm)	Zeit (h:mm)	Tiempo (h:mm)	Tempo (h:mm)
+TimeViking Time Report	TimeViking urenrapport	Rapport d'heures TimeViking	TimeViking Zeitbericht	Informe de horas TimeViking	Report ore TimeViking
+TimeViking timesheet report	TimeViking urenrapport	Rapport d'heures TimeViking	TimeViking Zeitbericht	Informe de horas TimeViking	Report ore TimeViking
+TimeViking timesheet report (PDF)	TimeViking urenrapport (PDF)	Rapport d'heures TimeViking (PDF)	TimeViking Zeitbericht (PDF)	Informe de horas TimeViking (PDF)	Report ore TimeViking (PDF)
+Timesheet Report	Urenrapport	Rapport des heures	Stundenbericht	Informe de horas	Report ore
+Timesheet Report (PDF/Excel)	Urenrapport (PDF/Excel)	Rapport des heures (PDF/Excel)	Stundenbericht (PDF/Excel)	Informe de horas (PDF/Excel)	Report ore (PDF/Excel)
+Timesheets	Uren	Heures	Stunden	Horas	Ore
+Total	Totaal	Total	Summe	Total	Totale
+Total %s	Totaal %s	Total %s	Summe %s	Total %s	Totale %s
+Total all employees	Totaal alle medewerkers	Total de tous les employés	Summe aller Mitarbeiter	Total de todos los empleados	Totale di tutti i dipendenti

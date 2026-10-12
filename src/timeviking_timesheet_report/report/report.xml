@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_timesheet_document">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <h2>Timesheet Report</h2>
+                <div class="row mt-3 mb-3" id="informations">
+                    <div class="col-auto col-4 mw-100 mb-2"><strong>Period</strong><div t-out="report['period']"/></div>
+                    <div class="col-auto col-4 mw-100 mb-2"><strong>Total time</strong><div><strong t-out="report['hours_str']"/></div></div>
+                </div>
+                <t t-foreach="report['employees']" t-as="block">
+                    <div class="tv_employee mt-4" style="page-break-inside: auto;">
+                        <h4 t-out="block['employee']"/>
+                        <table class="table table-sm o_main_table table-borderless">
+                            <thead style="display: table-row-group">
+                                <tr>
+                                    <th class="text-start">Date</th>
+                                    <th class="text-start">Project</th>
+                                    <th class="text-start">Task</th>
+                                    <th class="text-start">Description</th>
+                                    <th class="text-end text-nowrap">Time (h:mm)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="block['lines']" t-as="line">
+                                    <td class="text-nowrap"><span t-out="line['date_str']"/></td>
+                                    <td><span t-out="line['project']"/></td>
+                                    <td><span t-out="line['task']"/></td>
+                                    <td><span t-out="line['description']"/></td>
+                                    <td class="text-end text-nowrap"><span t-out="line['hours_str']"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row"><div class="col-5 ms-auto">
+                            <table class="table table-sm table-borderless">
+                                <tr class="border-black o_total">
+                                    <td><strong>Total</strong> <span t-out="block['employee']"/></td>
+                                    <td class="text-end text-nowrap"><strong t-out="block['hours_str']"/></td>
+                                </tr>
+                            </table>
+                        </div></div>
+                    </div>
+                </t>
+                <div t-if="len(report['employees']) &gt; 1" class="row mt-3"><div class="col-5 ms-auto">
+                    <table class="table table-sm table-borderless">
+                        <tr class="border-black o_total">
+                            <td><strong>Total all employees</strong></td>
+                            <td class="text-end text-nowrap"><strong t-out="report['hours_str']"/></td>
+                        </tr>
+                    </table>
+                </div></div>
+                <p t-if="report['powered_by']" class="tv_powered_by text-muted small mt-4" style="font-size: 8pt;">
+                    Powered by TimeViking (timeviking.com)
+                </p>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_timesheet">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-set="report" t-value="reports[o.id]"/>
+                <t t-set="company" t-value="o.company_id.sudo()"/>  <!-- the letterhead of the record's company (explicit: Odoo 20 needs it) -->
+                <t t-call="timeviking_timesheet_report.report_timesheet_document"/>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_report_timesheet" model="ir.actions.report">
+        <field name="name">Timesheet Report</field>
+        <field name="model">tv.timesheet.report.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">timeviking_timesheet_report.report_timesheet</field>
+        <field name="print_report_name">'Timesheets %s - %s' % (object.date_from, object.date_to)</field>
+        <field name="binding_model_id" eval="False"/>
+    </record>
+</odoo>

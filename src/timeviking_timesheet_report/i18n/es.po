@@ -1,0 +1,264 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 19:24+0000\n"
+"PO-Revision-Date: 2026-10-12 19:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: timeviking_timesheet_report
+#: model:ir.actions.report,print_report_name:timeviking_timesheet_report.action_report_timesheet
+msgid "'Timesheets %s - %s' % (object.date_from, object.date_to)"
+msgstr ""
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "<strong>Period</strong>"
+msgstr "<strong>Periodo</strong>"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "<strong>Total all employees</strong>"
+msgstr "<strong>Total de todos los empleados</strong>"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "<strong>Total time</strong>"
+msgstr "<strong>Tiempo total</strong>"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.tv_timesheet_report_wizard_view_form
+msgid "All employees"
+msgstr "Todos los empleados"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.tv_timesheet_report_wizard_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model,name:timeviking_timesheet_report.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "Date"
+msgstr "Fecha"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "Description"
+msgstr "Descripción"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__employee_ids
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__date_to
+msgid "End date"
+msgstr "Fecha de fin"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.tv_timesheet_report_wizard_view_form
+msgid "Export Excel"
+msgstr "Exportar a Excel"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_res_config_settings__tv_hide_powered_by
+msgid "Hide \"Powered by TimeViking\""
+msgstr "Ocultar \"Powered by TimeViking\""
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "Hours"
+msgstr "Horas"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__is_manager
+msgid "Is Manager"
+msgstr "Es responsable"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,help:timeviking_timesheet_report.field_tv_timesheet_report_wizard__employee_ids
+msgid "Leave empty for all employees you are allowed to see."
+msgstr "Déjelo vacío para todos los empleados que puede ver."
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "Period"
+msgstr "Periodo"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "Powered by TimeViking (timeviking.com)"
+msgstr "Powered by TimeViking (timeviking.com)"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "Powered by TimeViking - https://timeviking.com"
+msgstr "Powered by TimeViking - https://timeviking.com"
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.tv_timesheet_report_wizard_view_form
+msgid "Print PDF"
+msgstr "Imprimir PDF"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,help:timeviking_timesheet_report.field_res_config_settings__tv_hide_powered_by
+msgid ""
+"Remove the small \"Powered by TimeViking\" line under the timesheet report."
+msgstr "Quitar la pequeña línea \"Powered by TimeViking\" bajo el informe."
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.res_config_settings_view_form_tv_report
+msgid ""
+"Remove the small 'Powered by TimeViking' line from the PDF and Excel report"
+msgstr "Quitar la línea 'Powered by TimeViking' del informe PDF y Excel"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model.fields,field_description:timeviking_timesheet_report.field_tv_timesheet_report_wizard__date_from
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "Task"
+msgstr "Tarea"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "The Python library xlsxwriter is not installed."
+msgstr "La biblioteca Python xlsxwriter no está instalada."
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "The start date must be before the end date."
+msgstr "La fecha de inicio debe ser anterior a la fecha de fin."
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "There are no timesheets for this period and these employees."
+msgstr "No hay hojas de horas para este periodo y estos empleados."
+
+#. module: timeviking_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+msgid "Time (h:mm)"
+msgstr "Tiempo (h:mm)"
+
+#. module: timeviking_timesheet_report
+#: model:ir.actions.act_window,name:timeviking_timesheet_report.tv_timesheet_report_wizard_action
+#: model:ir.ui.menu,name:timeviking_timesheet_report.menu_tv_timesheet_report
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.res_config_settings_view_form_tv_report
+msgid "TimeViking Time Report"
+msgstr "Informe de horas TimeViking"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model,name:timeviking_timesheet_report.model_tv_timesheet_report_wizard
+msgid "TimeViking timesheet report"
+msgstr "Informe de horas TimeViking"
+
+#. module: timeviking_timesheet_report
+#: model:ir.model,name:timeviking_timesheet_report.model_report_timeviking_timesheet_report_report_timesheet
+msgid "TimeViking timesheet report (PDF)"
+msgstr "Informe de horas TimeViking (PDF)"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+#: model:ir.actions.report,name:timeviking_timesheet_report.action_report_timesheet
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.report_timesheet_document
+#: model_terms:ir.ui.view,arch_db:timeviking_timesheet_report.tv_timesheet_report_wizard_view_form
+msgid "Timesheet Report"
+msgstr "Informe de horas"
+
+#. module: timeviking_timesheet_report
+#: model:ir.actions.act_window,name:timeviking_timesheet_report.tv_timesheet_report_wizard_action_employee
+msgid "Timesheet Report (PDF/Excel)"
+msgstr "Informe de horas (PDF/Excel)"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "Timesheets"
+msgstr "Horas"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "Total"
+msgstr "Total"
+
+#. module: timeviking_timesheet_report
+#. odoo-python
+#: code:addons/timeviking_timesheet_report/wizard/timesheet_report_wizard.py:0
+msgid "Total %s"
+msgstr "Total %s"
