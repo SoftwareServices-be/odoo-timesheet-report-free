@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_tv_report" model="ir.ui.view">
+        <field name="name">res.config.settings.form.timeviking.timesheet.report</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="hr_timesheet.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='time_encoding_setting_container']" position="after">
+                <block title="TimeViking Time Report" name="tv_timesheet_report">
+                    <setting id="tv_hide_powered_by" help="Remove the small 'Powered by TimeViking' line from the PDF and Excel report">
+                        <field name="tv_hide_powered_by"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>
