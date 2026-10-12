@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="tv_timesheet_report_wizard_view_form" model="ir.ui.view">
+        <field name="name">tv.timesheet.report.wizard.form</field>
+        <field name="model">tv.timesheet.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Timesheet Report">
+                <field name="is_manager" invisible="1"/>
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <group>
+                        <field name="employee_ids" widget="many2many_tags" readonly="not is_manager"
+                               domain="[('company_id', 'in', [company_id, False])]" options="{'no_create': True}"
+                               placeholder="All employees"/>
+                        <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_pdf" string="Print PDF" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button name="action_excel" string="Export Excel" type="object" class="btn-secondary" data-hotkey="w"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="tv_timesheet_report_wizard_action" model="ir.actions.act_window">
+        <field name="name">TimeViking Time Report</field>
+        <field name="res_model">tv.timesheet.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <record id="tv_timesheet_report_wizard_action_employee" model="ir.actions.act_window">
+        <field name="name">Timesheet Report (PDF/Excel)</field>
+        <field name="res_model">tv.timesheet.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="hr.model_hr_employee"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="binding_type">report</field>
+        <field name="group_ids" eval="[Command.link(ref('hr_timesheet.group_hr_timesheet_approver'))]"/>
+    </record>
+
+    <menuitem id="menu_tv_timesheet_report"
+              name="TimeViking Time Report"
+              parent="hr_timesheet.menu_timesheets_reports"
+              action="tv_timesheet_report_wizard_action"
+              groups="hr_timesheet.group_hr_timesheet_user"
+              sequence="95"/>
+</odoo>
