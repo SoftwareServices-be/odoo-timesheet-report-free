@@ -1,6 +1,8 @@
 # Demo data for the store screenshots (invented names, no personal data). Run in `odoo-bin shell`:
 #   odoo-bin shell -c <conf> -d <db> --no-http < tools/seed_demo.py
 # Prints DEMO_WIZARD=<id> lines for tools/screenshots.mjs. Idempotent enough for a throw-away databank.
+import base64
+import os
 import random
 from datetime import date, timedelta
 
@@ -8,6 +10,10 @@ random.seed(7)
 company = env.company
 company.write({'name': 'Fjord Consulting', 'street': 'Havenlaan 12', 'city': 'Gent', 'zip': '9000',
                'country_id': env.ref('base.be').id, 'email': 'info@fjord.example', 'phone': '+32 9 000 00 00'})
+# invented logo of the fictional demo company (assets/demo_logo.svg -> .png), instead of Odoo's "Your logo"
+_logo = os.path.join(os.environ.get('DEMO_ROOT', '.'), 'assets', 'demo_logo.png')
+if os.path.exists(_logo):
+    company.logo = base64.b64encode(open(_logo, 'rb').read())
 env['res.users'].browse(2).write({'password': 'admin'})
 Partner, Project, Task, Employee = env['res.partner'], env['project.project'], env['project.task'], env['hr.employee']
 harbor = Partner.create({'name': 'Harbor Logistics', 'is_company': True})
